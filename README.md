@@ -9,7 +9,7 @@ Basically a limited version of what these modern tools do:
 - https://www.mh-aerotools.de/hp/hx-20/
 
 ## Files
-- floppy.bin -> Disk image of the original floppy disk
+- floppy.dd -> Disk image of the original floppy disk
 - floppy.jpg -> Photo of the original floppy disk
 - patch.sh -> Shell script that patches the original software and creates HXLINKP.COM
 - HXLINK.COM -> Original version of the software
