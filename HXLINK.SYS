@@ -1,0 +1,57 @@
+*************************************
+*                                   *
+*          HXLINK.SYS               *
+*                                   *
+*************************************
+
+*
+* HXLink kommuniziert normalerweise ber COM1 mit dem HX-20.
+* Wenn ihre Schnittstelle COM1 andersweitig belegt ist, k”nnen sie
+* HXLink auf die Schnittstelle COM2 umkonfigurieren, indem sie vor
+* Port2 den Stern (*) entfernen
+
+* Port2
+
+* Wenn sie vor NoScreen den * entfernen, emuliert HXLink keinen Bild-
+* schirmadapter. Sie k”nnen HXLink dann gleichzeitig mit einem vor-
+* handenen Adapter verwenden
+
+* NoScreen
+
+* Wenn sie vor NoDisk1 den * entfernen, emuliert HXLink nicht die
+* Diskettenlaufwerke A: und B:. Sie k”nnen HXLink dann gleichzeitig mit einer
+* TF20 verwenden, die entspechend konfiguriert wurde.
+
+* NoDisk1
+
+* Wenn sie vor NoDisk2 den * entfernen, emuliert HXLink nicht die
+* Diskettenlaufwerke C: und D:. Sie k”nnen HXLink dann gleichzeitig mit einer
+* TF20 verwenden, die entspechend konfiguriert wurde.
+
+* NoDisk2
+
+* šber Country wird HXLink mitgeteilt, welche nationalen Zeichensatz
+* ihr HX-20 verwendet. HXLink ist auf den deutschen Zeichensatz vor-
+* eingestellt. Andere Landeskennziffern entnehmen sie bitte dem
+* Handbuch
+
+Country = $15
+
+*
+* Wenn sie den HX-20 Laufwerken andere DOS Laufwerkspfade zuordnen wollen,
+* dann mssen sie die DOS Pfade A:\ bzw. B:\ „ndern :
+*
+
+DriveA  = A:\     * Diskettenlaufwerk 1
+DriveB  = B:\     * Diskettenlaufwerk 2
+DriveC  = C:      * evtl. Festplatte
+DriveD  = D:      * evtl. RAM Disk, Sie k”nnen auch ein weiteres
+                  * Festplattenverzeichnis angeben (z.B. C:\HX20)
+
+* Wenn sie einen Drucker mit IBM Zeichensatz besitzen, dann sollten sie vor
+* IBMPrinter den Stern (*) entfernen. Vorsicht ist jedoch bei Grafiken geboten
+* (--> Handbuch)
+
+* IBMPrinter
+
+
